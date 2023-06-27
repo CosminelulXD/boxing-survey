@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boxing Survey</title>
+    <div class="container"></div>
+    <header class="header">
+        <h1 id="title" class="text-center">Boxing survey camp</h1>
+        <p id="description" class="description-text-center">Thank you for using this platform too submit your opinion of boxing</p>
+    </div>
+      </header>
+</head>
+<body>
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="label-name" for="name">Name</label>
+          <input type="text"
+                 name="name"
+                 id="name"
+                 class="form-control"
+                 placeholder="Enter your name"
+                 required />
+        </div>
+         <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"/label>Age<span=class="clue">(optional)</span></label>
+          <input
+                 type="number"
+                 name="age"
+                 id="number"
+                 min="10"
+                 max="99"
+                 class="form-control"
+                 placeholder="age"/>
+        </div>
+        <div class="form-group">
+          <p>Which option describes your boxing position right now</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your current position</option>
+            <option value="Never done boxing">Never done boxing</option>
+            <option value="Amateur">Amateur</amateur>
+          <option value="Debut">Debut</option>
+          <option value="Professional">Professional</option>
+          <option value="Champion">Champion</option>
+          </select>
+        </div>
+      <div class="form-group">
+        <p>Would you recommend boxing to a friend ?</p>
+        <label>
+          <input 
+                 name="user-recommended"
+                 value="definetly"
+                 type="radio"
+                 class="input-radio"
+                 />Definetly</label>
+        <input
+               name="user-recommended"
+               value="Maybe"
+               type="radio"
+               class="input-radio"
+               />Maybe</label>
+      <input
+             name="user-recommended"
+             value="Nah"
+             type="radio"
+             class="input-radio"
+             />Nah</label>
+    </div>
+    <div class="form-group">
+      <p>What's your favorite feature about boxing</p>
+      <select id="most-like" name="most-like" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Cardio">Cardio</option>
+        <option value="Muscle strength">Muscle Strength</option>
+        <option value="Fighting">Fighting</option>
+        <option value="Hitting the bag">Hitting the bag</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>What do u think about boxing it's better than any other fighting sports</p>
+      <span class="clue">(Think about it)</span>
+      <label>
+        <input
+               name="prefer"
+               value="MMA"
+               type="checkbox"
+               class="input-checkbox"
+               />MMA</label>
+      <label>
+             <input
+                    name="prefer"
+                    value="BJJ"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />BJJ</label>
+      <label>
+        <input name="prefer"
+               value="karate"
+               type="checkbox"
+               class="input-checkbox"
+               />Karate</label>
+      <label>
+             <input name="prefer"
+                    value="other traditional fighting sport"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />other traditional fighting sport</label>
+      <div class="form-group">
+        <p>What do u think about the sport of boxing leave a comment</p>
+        <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here"
+                  ></textarea>
+      </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+      Submit
+      </button>
+      </div>
+      </form>
+    </div>
+    
